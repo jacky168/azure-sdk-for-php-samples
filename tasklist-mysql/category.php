@@ -44,8 +44,8 @@
 	header('Cache-Control: no-cache');
 	header('Pragma: no-cache');
 	require_once "getcategorys.php";
-	$categorys = getCategorys();
-	echo $categorys;
+//	$categorys = getCategorys();
+//	echo $categorys;
 /*	
 	if(!empty($categorys))
 	{
