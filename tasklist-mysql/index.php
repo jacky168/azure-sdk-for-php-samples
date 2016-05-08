@@ -44,7 +44,10 @@
 	header('Cache-Control: no-cache');
 	header('Pragma: no-cache');
 	require_once "getitems.php";
+	require_once "getcategorys.php";
+	require_once "utility.php"
 	$items = getItems();
+	$categorys = getCategorys();
 	if(!empty($items))
 	{
 		echo "<table border='1'>
@@ -89,7 +92,7 @@
 			</tr>
 			<tr>
 				<td>Item Category: </td>
-				<td><input name="itemcategory" type="text"/></td>
+				<td><?php generateDropDownList($categorys) ?></td>
 			</tr>
 			<tr>
 				<td>Item Date (yyyy-mm-dd): </td>
