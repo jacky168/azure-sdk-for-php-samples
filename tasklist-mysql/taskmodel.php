@@ -93,7 +93,7 @@ function deleteItem($item_id)
 function deleteCategory($category_id)
 {
 	$conn = connect();
-	$sql = "DELETE FROM category WHERE category_id = ?";
+	$sql = "DELETE FROM Category WHERE category_id = ?";
 	$stmt = $conn->prepare($sql);
 	$stmt->bindValue(1, $category_id);
 	$stmt->execute();

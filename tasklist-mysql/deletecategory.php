@@ -17,7 +17,7 @@ include_once 'taskmodel.php';
 
 $id = $_GET['category_id'];
 
-deleteItem($category_id);
+deleteCategory($category_id);
 
 header('Location: category.php');
 ?>
