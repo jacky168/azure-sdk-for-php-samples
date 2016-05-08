@@ -62,21 +62,21 @@
 		foreach($items as $item)
 		{
 			echo 	"<tr>
-						<td>".$item["name"]."</td>
-						<td>".$item["category_name"]."</td>
-						<td>".$item["date"]."</td>";
+						<td>".$item[1]."</td>
+						<td>".$item[6]."</td>
+						<td>".$item[2]."</td>";
 							
-			if($item[4] == 0)
+			if($item[3] == 0)
 			{
 				echo "<td>No</td>";
-				echo "<td><a href='markitemcomplete.php?id=".$item["id"]."'>Mark complete</a></td>";
+				echo "<td><a href='markitemcomplete.php?id=".$item[0]."'>Mark complete</a></td>";
 			}
 			else
 			{
 				echo "<td>Yes</td>";
 				echo "<td>N/A</td>";
 			}
-			echo "<td><a href='deleteitem.php?id=".$item["id"]."'>Delete</a></td>";
+			echo "<td><a href='deleteitem.php?id=".$item[0]."'>Delete</a></td>";
 			echo "</tr>";
 		}
 		
