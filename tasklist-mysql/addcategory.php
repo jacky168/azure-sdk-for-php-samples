@@ -19,5 +19,5 @@ $category_name = $_POST['categoryname'];
 
 addCategory($category_name);
 
-header('Location: index.php');
+header('Location: category.php');
 ?>
