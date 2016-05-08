@@ -46,11 +46,11 @@
 #	require_once "getcategorys.php";
 	include_once 'taskmodel.php';
 	$categorys = getAllCategorys();
-	if($categorys)
+/*	if($categorys)
 		echo $categorys;
 	else
 		echo "something wrong!";
-/*	
+*/	
 	if(!empty($categorys))
 	{
 		echo "<table border='1'>
@@ -69,7 +69,7 @@
 		
 		echo "</table>";
 	}
-*/	
+	
 ?>
 	<hr/>
 	<form action="addcategory.php" method="post">
