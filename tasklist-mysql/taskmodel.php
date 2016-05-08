@@ -62,7 +62,7 @@ function getAllCategorys()
 function addItem($name, $category, $date, $is_complete)
 {
 	$conn = connect();
-	$sql = "INSERT INTO items (name, category, date, is_complete) VALUES (?, ?, ?, ?)";
+	$sql = "INSERT INTO items (name, category_id, date, is_complete) VALUES (?, ?, ?, ?)";
 	$stmt = $conn->prepare($sql);
 	$stmt->bindValue(1, $name);
 	$stmt->bindValue(2, $category);

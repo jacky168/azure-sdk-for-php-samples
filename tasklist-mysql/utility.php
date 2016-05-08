@@ -2,7 +2,7 @@
 
 
 function generateDropDownList($list) {
-	echo "<select>";
+	echo "<select name=\"category_id\">";
 	if(!empty($list)) 
 	{
 		foreach($list as $item) {
