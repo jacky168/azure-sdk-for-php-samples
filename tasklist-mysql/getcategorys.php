@@ -15,7 +15,7 @@
 	
 include_once 'taskmodel.php';
 
-function getItems()
+function getCategorys()
 {
   $categorys = getAllCategorys();
   return $categorys;
