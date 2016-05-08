@@ -45,7 +45,10 @@
 	header('Pragma: no-cache');
 	require_once "getcategorys.php";
 	$categorys = getCategorys();
-	echo $categorys;
+	if($categorys)
+		echo $categorys;
+	else
+		echo "something wrong!";
 /*	
 	if(!empty($categorys))
 	{
