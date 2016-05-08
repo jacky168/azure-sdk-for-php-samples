@@ -62,8 +62,8 @@
 		foreach($items as $item)
 		{
 			echo 	"<tr>
-						<td>".$item[1]."</td>
-						<td>".$item[6]."</td>
+						<td>".$item['name']."</td>
+						<td>".$item['category_name']."</td>
 						<td>".$item[2]."</td>";
 							
 			if($item[3] == 0)
