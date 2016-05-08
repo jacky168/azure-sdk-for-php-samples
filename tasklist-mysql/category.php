@@ -63,7 +63,7 @@
 			echo 	"<tr>
 						<td>".$category[1]."</td>";
 							
-			echo "<td><a href='deletecategory.php?id=".$category[0]."'>Delete</a></td>";
+			echo "<td><a href='deletecategory.php?category_id=".$category[0]."'>Delete</a></td>";
 			echo "</tr>";
 		}
 		
