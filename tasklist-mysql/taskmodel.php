@@ -44,7 +44,7 @@ function markItemComplete($item_id)
 function getAllItems()
 {
 	$conn = connect();
-	$sql = "SELECT id, name, category_name, date, is_complete, category_id FROM items, category WHERE items.category_id = category.category_id";
+	$sql = "SELECT id, name, category_name, date, is_complete, items.category_id FROM items, category WHERE items.category_id = category.category_id";
 	$stmt = $conn->query($sql);
 	return $stmt->fetchAll(PDO::FETCH_NUM);
 }
