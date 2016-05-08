@@ -44,9 +44,9 @@
 	header('Cache-Control: no-cache');
 	header('Pragma: no-cache');
 	require_once "getcategorys.php";
-//	$items = getItems();
 	$categorys = getCategorys();
 	echo $categorys;
+/*	
 	if(!empty($categorys))
 	{
 		echo "<table border='1'>
@@ -65,6 +65,7 @@
 		
 		echo "</table>";
 	}
+*/	
 ?>
 	<hr/>
 	<form action="addcategory.php" method="post">
