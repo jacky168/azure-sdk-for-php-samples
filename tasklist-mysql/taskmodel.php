@@ -39,6 +39,15 @@ function markItemComplete($item_id)
 	$stmt->execute();
 }
 
+function getAllCategorys()
+{
+	$conn = connect();
+	$sql = "SELECT * FROM category";
+	$stmt = $conn->query($sql);
+	return $stmt->fetchAll(POD::FETCH_NUM);
+}
+
+
 function getAllItems()
 {
 	$conn = connect();
@@ -59,12 +68,31 @@ function addItem($name, $category, $date, $is_complete)
 	$stmt->execute();
 }
 
+function addCategory($name)
+{
+	$conn = connect();
+	$sql = "INSERT INTO category (category_name) VALUES (?)";
+	$stmt = $conn->prepare($sql);
+	$stmt->bindValue(1, $name);
+	$stmt->execute();	
+}
+
 function deleteItem($item_id)
 {
 	$conn = connect();
 	$sql = "DELETE FROM items WHERE id = ?";
 	$stmt = $conn->prepare($sql);
 	$stmt->bindValue(1, $item_id);
+	$stmt->execute();
+}
+
+
+function deleteCategory($category_id)
+{
+	$conn = connect();
+	$sql = "DELETE FROM category WHERE category_id = ?";
+	$stmt = $conn->prepare($sql);
+	$stmt->bindValue(1, $category_id);
 	$stmt->execute();
 }
 

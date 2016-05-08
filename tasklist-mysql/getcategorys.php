@@ -15,9 +15,9 @@
 	
 include_once 'taskmodel.php';
 
-$category_name = $_POST['categoryname'];
-
-addCategory($category_name);
-
-header('Location: index.php');
+function getItems()
+{
+  $categorys = getAllCategorys();
+  return $categorys;
+}
 ?>
