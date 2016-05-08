@@ -2,10 +2,13 @@
 
 
 function generateDropDownList($list) {
-
-	foreach ($list as $item) {
-		# code...
-		echo $item[0] . " " . $item[1]
+	echo $list;
+	if(!empty($list)) 
+	{
+		foreach ($list as $item) {
+			echo $item[0] . " " . $item[1]
+		}
 	}
+
 }
 ?>
