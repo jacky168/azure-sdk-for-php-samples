@@ -43,8 +43,8 @@
 <?php
 	header('Cache-Control: no-cache');
 	header('Pragma: no-cache');
-#	require_once "getcategorys.php";
-	include_once 'taskmodel.php';
+	require_once "getcategorys.php";
+	//include_once 'taskmodel.php';
 	$categorys = getAllCategorys();
 /*	if($categorys)
 		echo $categorys;
