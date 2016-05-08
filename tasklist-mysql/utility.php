@@ -2,13 +2,13 @@
 
 
 function generateDropDownList($list) {
-	//echo $list;
+	echo "<select>";
 	if(!empty($list)) 
 	{
 		foreach($list as $item) {
-			echo $item[0] . " " . $item[1];
+			echo "<option value=\"" . $item[0] . "\">" . $item[1] . "</option>"
 		}
 	}
-
+	echo "</select>";
 }
 ?>
