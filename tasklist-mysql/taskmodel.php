@@ -39,13 +39,6 @@ function markItemComplete($item_id)
 	$stmt->execute();
 }
 
-function getAllCategorys()
-{
-	$conn = connect();
-	$sql = "SELECT * FROM items";
-	$stmt = $conn->query($sql);	
-	return $stmt->fetchAll(POD::FETCH_NUM);
-}
 
 
 function getAllItems()
@@ -55,6 +48,16 @@ function getAllItems()
 	$stmt = $conn->query($sql);
 	return $stmt->fetchAll(PDO::FETCH_NUM);
 }
+
+
+function getAllCategorys()
+{
+	$conn = connect();
+	$sql = "SELECT * FROM Category";
+	$stmt = $conn->query($sql);
+	return $stmt->fetchAll(PDO::FETCH_NUM);
+}
+
 
 function addItem($name, $category, $date, $is_complete)
 {
