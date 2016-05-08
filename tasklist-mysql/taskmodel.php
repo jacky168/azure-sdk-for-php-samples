@@ -42,6 +42,7 @@ function markItemComplete($item_id)
 function getAllCategorys()
 {
 	$conn = connect();
+	echo $conn;
 	$sql = "SELECT * FROM category";
 	$stmt = $conn->query($sql);
 	echo $stmt;
@@ -52,6 +53,7 @@ function getAllCategorys()
 function getAllItems()
 {
 	$conn = connect();
+	echo $conn;
 	$sql = "SELECT * FROM items";
 	$stmt = $conn->query($sql);
 	return $stmt->fetchAll(PDO::FETCH_NUM);
