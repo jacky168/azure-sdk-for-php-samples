@@ -2,7 +2,7 @@
 
 
 function generateDropDownList($list) {
-	echo $list;
+	//echo $list;
 	if(!empty($list)) 
 	{
 		foreach($list as $item) {

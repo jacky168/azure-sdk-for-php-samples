@@ -92,7 +92,7 @@
 			</tr>
 			<tr>
 				<td>Item Category: </td>
-				<td><?php // generateDropDownList($categorys); ?></td>
+				<td><?php  generateDropDownList($categorys); ?></td>
 			</tr>
 			<tr>
 				<td>Item Date (yyyy-mm-dd): </td>
