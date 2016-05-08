@@ -62,11 +62,11 @@
 		foreach($items as $item)
 		{
 			echo 	"<tr>
-						<td>".$item['name']."</td>
-						<td>".$item['category_name']."</td>
-						<td>".$item[2]."</td>";
+						<td>".$item[1]."</td>
+						<td>".$item[2]."</td>
+						<td>".$item[3]."</td>";
 							
-			if($item[3] == 0)
+			if($item[4] == 0)
 			{
 				echo "<td>No</td>";
 				echo "<td><a href='markitemcomplete.php?id=".$item[0]."'>Mark complete</a></td>";
