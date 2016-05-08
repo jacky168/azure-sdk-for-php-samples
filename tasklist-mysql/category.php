@@ -45,8 +45,9 @@
 	header('Pragma: no-cache');
 	require_once "getcategorys.php";
 //	$items = getItems();
-	$category = getCategorys();
-	if(!empty($category))
+	$categorys = getCategorys();
+	echo $categorys;
+	if(!empty($categorys))
 	{
 		echo "<table border='1'>
 				<tr>
