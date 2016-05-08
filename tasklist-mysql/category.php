@@ -45,7 +45,7 @@
 	header('Pragma: no-cache');
 #	require_once "getcategorys.php";
 	include_once 'taskmodel.php';
-	$categorys = getAllItems();
+	$categorys = getAllCategorys();
 	if($categorys)
 		echo $categorys;
 	else
