@@ -44,6 +44,7 @@ function getAllCategorys()
 	$conn = connect();
 	$sql = "SELECT * FROM category";
 	$stmt = $conn->query($sql);
+	echo $stmt;
 	return $stmt->fetchAll(POD::FETCH_NUM);
 }
 
