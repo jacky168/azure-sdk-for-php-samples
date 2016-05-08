@@ -42,7 +42,7 @@ function markItemComplete($item_id)
 function getAllCategorys()
 {
 	$conn = connect();
-	$sql = "SELECT * FROM category";
+	$sql = "SELECT * FROM items";
 	$stmt = $conn->query($sql);	
 	return $stmt->fetchAll(POD::FETCH_NUM);
 }
