@@ -17,9 +17,9 @@ function connect()
 {
 	// DB connection info
 	$host = "ap-cdbr-azure-southeast-b.cloudapp.net";
-	$user = "b577d7f377aabc";
-	$pwd = "01a6d29a";
-	$db = "IEM_DBMS";
+	$user = "bcce9f24ac545d";
+	$pwd = "7fca2ba4";
+	$db = "MyDemo";
 	try{
 		$conn = new PDO( "mysql:host=$host;dbname=$db", $user, $pwd);
 		$conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
