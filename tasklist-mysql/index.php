@@ -1,3 +1,8 @@
+<?php
+	header('Cache-Control: no-cache');
+	header('Pragma: no-cache');
+?>
+
 <html>
 <!--
 /** * Copyright 2013 Microsoft Corporation 
@@ -15,7 +20,7 @@
 	*/
 -->
 <head>
-	<title>My ToDo List (Test from local computer)</title>
+	<title>My ToDo List</title>
 	<style type="text/css">
 	body { background-color: #fff; border-top: solid 10px #000;
 		color: #333; font-size: .85em; margin: 20px; padding: 20px;
@@ -38,11 +43,12 @@
 	</style>
 </head>
 <body>
-	<h1>My ToDo List (test again)</h1>
+	<h1>My ToDo List</h1>
+	<a href="category.php"> Category Management </a>
 
 <?php
-	header('Cache-Control: no-cache');
-	header('Pragma: no-cache');
+//	header('Cache-Control: no-cache');
+//	header('Pragma: no-cache');
 	require_once "getitems.php";
 	require_once "getcategorys.php";
 	require_once "utility.php";

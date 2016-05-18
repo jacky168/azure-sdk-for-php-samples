@@ -1,3 +1,7 @@
+<?php
+	header('Cache-Control: no-cache');
+	header('Pragma: no-cache');
+?>
 <html>
 <!--
 /** * Copyright 2013 Microsoft Corporation 
@@ -41,8 +45,6 @@
 	<h1>My Category List</h1>
 
 <?php
-	header('Cache-Control: no-cache');
-	header('Pragma: no-cache');
 	require_once "getcategorys.php";
 	//include_once 'taskmodel.php';
 	$categorys = getAllCategorys();
